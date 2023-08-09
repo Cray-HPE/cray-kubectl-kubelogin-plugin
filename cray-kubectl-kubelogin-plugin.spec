@@ -22,14 +22,14 @@
 
 %define bin_dir /usr/bin
 
-Name: %(echo $NAME)
-BuildArchitectures: x86_64
-Vendor: Hewlett Packard Enterprise Company
-License: HPE Proprietary 
-Summary: Install and configuration of node_exporter
-Version: %(echo $VERSION) 
-Release: 1
-Source: %{name}-%{version}.tar.bz2
+Name:      %(echo $NAME)
+Vendor:    Hewlett Packard Enterprise Company
+License:   HPE Proprietary 
+Summary:   Install and configuration of node_exporter
+Version:   %(echo $VERSION) 
+Release:   1
+BuildArch: x86_64
+Source:    %{name}-%{version}.tar.bz2
 
 %description
 This RPM when installed will install and configure the /usr/bin/kubectl-oidc_login binary.
