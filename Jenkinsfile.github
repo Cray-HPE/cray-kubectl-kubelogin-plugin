@@ -97,11 +97,11 @@ pipeline {
                     }
                     steps {
                         script {
-                            publishCsmRpms(arch: "noarch",
+                            publishCsmRpms(arch: "x86_64",
                                     component: env.NAME,
                                     isStable: isStable,
                                     os: "noos",
-                                    pattern: "dist/rpmbuild/RPMS/noarch/*.rpm",
+                                    pattern: "dist/rpmbuild/RPMS/x86_64/*.rpm",
                             )
                             publishCsmRpms(arch: "src",
                                     component: env.NAME,
